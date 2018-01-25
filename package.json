@@ -1,0 +1,24 @@
+{
+  "name": "nanowarz",
+  "version": "1.0.0",
+  "description": "A tiny MOBA game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferb96/nanowarz.git"
+  },
+  "author": "Duy Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ferb96/nanowarz/issues"
+  },
+  "homepage": "https://github.com/ferb96/nanowarz#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "phaser-ce": "^2.10.0",
+    "socket.io": "^2.0.4"
+  }
+}
