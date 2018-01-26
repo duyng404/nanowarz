@@ -7,7 +7,7 @@ var TheGame = function(){
 	var hud = {};
 
 	this.preload = function(){
-		peer = new Peer({host: 'localhost', port: 8080, path: '/peerjs', debug: 3});
+		peer = new Peer({host: window.location.hostname, port: 8080, path: '/peerjs'/*,debug: 3*/});
 		peer.on('open',function(id){
 			gvar.id = id;
 			console.log('Peer id is: ' + id);
