@@ -2,6 +2,7 @@
 var path = require('path');
 var express = require('express');
 var app = express();
+var ExpressPeerServer = require('peer').ExpressPeerServer;
 
 // this server gonna run on this port
 app.set('port', 8080);
@@ -17,3 +18,6 @@ var server = app.listen(app.get('port'), function(){
 	var port = server.address().port;
 	console.log("Magic happens on port " + port);
 });
+
+// peer js server
+app.use('/peerjs', ExpressPeerServer(server, { debug:true, allow_discovery:true }));
